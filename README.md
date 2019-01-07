@@ -10,6 +10,7 @@ Weighted KNN
 
 ## Analysis Report
 1.Exploration
+
 red wine dataset contains 1,599 obs with 12 variables and wine quality ranges from 3 to 8
 white wine dataset contains 4,898 obs with 12 variables and wine quality ranges from 3 to 9
 
@@ -19,4 +20,11 @@ Based on the distribution of wine quality, I create a new variable – rating wh
 
 
 2.Model Development
+
 Key factors determines the wine quality: pH value, alcohol content, density and acidity level
+
+Box Plot of wine variables:
+
+For the linear regression: the red/white wine dataset, I log the Sulphates into a new variable “newsul”. The best performance model contains alcohol, new Sulphates, volatile acidity, citric acid and fixed acidity.
+
+In this figure, we can see that the best quality wines have high values of both alcohol percentage and Sulphates concentration, so the higher the contents the better the wine quality. Even though there is a downward trend of high quality, it can be treated as the when the concentration of alcohol is higher, Sulphates tend to be lower in good quality wine. For the bad quality wine, the alcohol and Sulphates level are relatively lower than other higher quality wine, and the reduction of percentage of alcohol level is more significant than Sulphates.
